@@ -18,6 +18,7 @@
         rel="stylesheet"
     />
     <link rel="stylesheet" href="css/index.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
@@ -41,8 +42,30 @@
         </nav>
 
         <section id="inicio" style="text-align: center; background-color: #FFFFFF;">
-            <img src="images/imagenekle.jpg" alt="" style="max-width: 100%; height: auto;">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/imagenekle.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/imagenekle.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/imagenekle.jpg" class="d-block w-100" alt="...">
+                </div>
+                </div>
+            </div>
         </section>
+        <script>
+            // Selecciona el carrusel
+            var carousel = document.querySelector('#carouselExample');
+    
+            // Inicia el carrusel
+            var carouselInstance = new bootstrap.Carousel(carousel, {
+                interval: 2000 // Cambia la diapositiva cada 2 segundos
+            });
+        </script>
+        
     </header>
 
     <main class="main">
@@ -70,7 +93,7 @@
             <div class="easybank__services" style="padding-top: 50px;">
                 <article class="easybank__service">
                     <img src="images/icon-online.svg" class="easybank__icon" />
-                    <h3 class="easybank__title">Progrma 1</h3>
+                    <h3 class="easybank__title">Programa 1</h3>
                     <p class="easybank__copy">
                         Disfruta de nuestra transmisión en línea en cualquier momento y en cualquier lugar.
                     </p>
@@ -285,27 +308,54 @@
         </div>
         <div class="articles__container container" style="display: flex; justify-content: space-around;">
             <div style="margin-right: 20px; text-align: center;">
-                <h3><strong>Jueves</strong></h3>
-                <p>19:30hs - 22:30hs</p>
-                <p>Reunion General</p>
+                <div style="text-align: center;">
+                    <h3><strong>Lunes</strong></h3>
+                    
+                    <p style="margin-bottom: 5px;">Intersección</p>
+                    <p>19:00hs - 21:00hs</p>
+                </div>
             </div>
             <div style="margin-right: 20px; text-align: center;">
-                <h3><strong>Sábados</strong></h3>
-                <p>14:00hs - 17:00hs</p>
-                <p>Teens</p>
+                <div style="text-align: center;">
+                    <h3><strong>Jueves</strong></h3>
+                    
+                    <p style="margin-bottom: 5px;">Reunion General</p>
+                    <p>19:30hs - 22:30hs</p>
+                </div>
             </div>
             <div style="margin-right: 20px; text-align: center;">
-                <h3><strong>Sábados</strong></h3>
-                <p>19:00hs - 22:00hs</p>
-                <p>Jovenes</p>
+                <div style="text-align: center;">
+                    <h3><strong>Viernes</strong></h3>
+                    
+                    <p style="margin-bottom: 5px;">Mujeres</p>
+                    <p>18:00hs - 20:00hs</p>
+                    
+                    <p style="margin-bottom: 5px;">Hombres</p>
+                    <p>20:00hs - 22:30hs</p>
+                </div>
+            </div>
+            <div style="margin-right: 20px; text-align: center;">
+                <div style="text-align: center;">
+                    <h3><strong>Sábados</strong></h3>
+                    
+                    <p style="margin-bottom: 5px;">Teens</p>
+                    <p>14:00hs - 17:00hs</p>
+                    
+                    <p style="margin-bottom: 5px;">Jovenes</p>
+                    <p>19:00hs - 22:00hs</p>
+                </div>
             </div>
             <div style="text-align: center;">
-                <h3><strong>Domingos</strong></h3>
-                <p>11:00hs - 13:00hs</p>
-                <p>Reunion General</p>
+                <div style="text-align: center;">
+                    <h3><strong>Domingos</strong></h3>
+                    
+                    <p style="margin-bottom: 5px;">Reunion General</p>
+                    <p>11:00hs - 13:00hs</p>
+                </div>
             </div>
         </div>
     </section>
+    
 
     <section id="contacto" class="form-section">
         <div class="form-container">
@@ -380,6 +430,7 @@
             </div>
         </section>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
