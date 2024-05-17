@@ -21,54 +21,32 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-
-    <header class="hero" style="background-color: hsl(233, 26%, 24%);">
-        <nav class="nav container" style="background-color: hsl(233, 26%, 24%);">
-            <figure class="nav__logo">
-            <h2 style="color: #FFFFFF;">Ekklesia</h2>
-            </figure>
-        <div class="nav__links" id="menu">
-            <a href="#inicio" class="nav__link">Inicio</a>
-            <a href="#sobre-nosotros" class="nav__link">Sobre Nosotros</a>
-            <a href="Eventos.html" class="nav__link">Eventos</a>
-            <a href="#ministerios" class="nav__link">Ministerios</a>
-            <a href="#reuniones" class="nav__link">Reuniones</a>
-            <a href="Voluntariado.html" class="nav__link">Voluntarios</a>
-            <a href="#contacto" class="nav__link">Contacto</a>
-        </div>
-            <a href="#menu" class="nav__menu">
-                <img src="images/icon-hamburger.svg" class="nav__icon" />
-            </a>
-        </nav>
-
-        <section id="inicio" style="text-align: center; background-color: #FFFFFF;">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/imagenekle.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/imagenekle.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/imagenekle.jpg" class="d-block w-100" alt="...">
-                </div>
+    <header>
+        <nav>
+            <div class="navbar">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre-nosotros">Sobre Nosotros</a>
+                <a href="Eventos.html">Eventos</a>
+                <a href="#ministerios">Ministerios</a>
+                <a href="#reuniones">Reuniones</a>
+                <a href="Voluntariado.html">Voluntarios</a>
+                <a href="#contacto">Contacto</a>
+                <div class="menu-toggle">
+                    <div class="hamburger"></div>
                 </div>
             </div>
-        </section>
-        <script>
-            // Selecciona el carrusel
-            var carousel = document.querySelector('#carouselExample');
-    
-            // Inicia el carrusel
-            var carouselInstance = new bootstrap.Carousel(carousel, {
-                interval: 2000 // Cambia la diapositiva cada 2 segundos
-            });
-        </script>
-        
+        </nav>
     </header>
-
+    
     <main class="main">
+
+        <section id="inicio">
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="images/Video Presentacion.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
 
     <section id="sobre-nosotros" class="articles" style="align-items: center;">
             <div class="easybank__container container">
@@ -126,180 +104,123 @@
         </div>
     </section>
     
+    <section id="ministerios" class="new-articles">
+        <div class="new-articles__container">
+            <h2 class="new-title">Ministerios</h2>
+            <div class="new-articles__carousel">
+                <div class="new-articles__track">
 
-    <section id="ministerios" class="articles">
-        <div class="articles__container container">
-            <h2 class="title">Ministerios</h2>
-
-            <div class="articles__content">
-                <article class="articles__article">
-                <div class="articles__img"></div>
-                <div class="articles__text">
-                    <h3 class="articles__title">
-                    Hombres
-                    </h3>
-                    <p class="articles__paragraph">
-                    The world is getting smaller and we’re becoming more mobile.
-                    So why should you be forced to only receive money in a single
-                    …
-                    </p>
-                </div>
-                </article>
-
-                <article class="articles__article">
-                <div class="articles__img"></div>
-                <div class="articles__text">
-                    <h3 class="articles__title">
-                    Mujeres
-                    </h3>
-                    <p class="articles__paragraph">
-                    Our simple budgeting feature allows you to separate out your
-                    spending and set realistic limits each month. That means you …
-                    </p>
-                </div>
-                </article>
-
-                <article class="articles__article">
-                <div class="articles__img"></div>
-                <div class="articles__text">
-                    <h3 class="articles__title">
-                    Jovenes
-                    </h3>
-                    <p class="articles__paragraph">
-                    We want you to enjoy your travels. This is why we don’t charge
-                    any fees on purchases while you’re abroad. We’ll even show you
-                    …
-                    </p>
-                </div>
-                </article>
-
-                <article class="articles__article">
-                <div class="articles__img"></div>
-                <div class="articles__text">
-                    <h3 class="articles__title">
-                    Teens
-                    </h3>
-                    <p class="articles__paragraph">
-                    After a lot of hard work by the whole team, we’re excited to
-                    launch our closed beta. It’s easy to request an invite through
-                    the site ...
-                    </p>
-                </div>
-                </article>
-
-                <article class="articles__article">
-                    <div class="articles__img"></div>
-                    <div class="articles__text">
-                        <h3 class="articles__title">
-                        Niños
-                        </h3>
-                        <p class="articles__paragraph">
-                        We want you to enjoy your travels. This is why we don’t charge
-                        any fees on purchases while you’re abroad. We’ll even show you
-                        …
-                        </p>
-                    </div>
-                </article>
-
-                    <article class="articles__article">
-                        <div class="articles__img"></div>
-                        <div class="articles__text">
-                            <h3 class="articles__title">
-                            Alabanza
-                            </h3>
-                            <p class="articles__paragraph">
-                            We want you to enjoy your travels. This is why we don’t charge
-                            any fees on purchases while you’re abroad. We’ll even show you
-                            …
+                    <article class="new-articles__item">
+                        <div class="new-articles__img"></div>
+                        <div class="new-articles__text">
+                            <h3 class="new-articles__title">Hombres</h3>
+                            <p class="new-articles__paragraph">
+                                The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …
                             </p>
                         </div>
                     </article>
-
-                    <article class="articles__article">
-                        <div class="articles__img"></div>
-                        <div class="articles__text">
-                            <h3 class="articles__title">
-                            Maestros
-                            </h3>
-                            <p class="articles__paragraph">
-                            We want you to enjoy your travels. This is why we don’t charge
-                            any fees on purchases while you’re abroad. We’ll even show you
-                            …
+                    <article class="new-articles__item">
+                        <div class="new-articles__img"></div>
+                        <div class="new-articles__text">
+                            <h3 class="new-articles__title">Mujeres</h3>
+                            <p class="new-articles__paragraph">
+                                Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …
                             </p>
                         </div>
                     </article>
-
-                    <article class="articles__article">
-                        <div class="articles__img"></div>
-                        <div class="articles__text">
-                            <h3 class="articles__title">
-                            Ugieres
-                            </h3>
-                            <p class="articles__paragraph">
-                            We want you to enjoy your travels. This is why we don’t charge
-                            any fees on purchases while you’re abroad. We’ll even show you
-                            …
+                    <article class="new-articles__item">
+                        <div class="new-articles__img"></div>
+                        <div class="new-articles__text">
+                            <h3 class="new-articles__title">Jóvenes</h3>
+                            <p class="new-articles__paragraph">
+                                We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …
                             </p>
                         </div>
                     </article>
-
-                    <article class="articles__article">
-                        <div class="articles__img"></div>
-                        <div class="articles__text">
-                            <h3 class="articles__title">
-                            Danza
-                            </h3>
-                            <p class="articles__paragraph">
-                            We want you to enjoy your travels. This is why we don’t charge
-                            any fees on purchases while you’re abroad. We’ll even show you
-                            …
+                    <article class="new-articles__item">
+                        <div class="new-articles__img"></div>
+                        <div class="new-articles__text">
+                            <h3 class="new-articles__title">Teens</h3>
+                            <p class="new-articles__paragraph">
+                                After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ...
                             </p>
                         </div>
                     </article>
-
-                    <article class="articles__article">
-                        <div class="articles__img"></div>
-                        <div class="articles__text">
-                            <h3 class="articles__title">
-                            Radio
-                            </h3>
-                            <p class="articles__paragraph">
-                            We want you to enjoy your travels. This is why we don’t charge
-                            any fees on purchases while you’re abroad. We’ll even show you
-                            …
+                    <article class="new-articles__item">
+                        <div class="new-articles__img"></div>
+                        <div class="new-articles__text">
+                            <h3 class="new-articles__title">Teens</h3>
+                            <p class="new-articles__paragraph">
+                                After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ...
                             </p>
                         </div>
                     </article>
-
-                    <article class="articles__article">
-                        <div class="articles__img"></div>
-                        <div class="articles__text">
-                            <h3 class="articles__title">
-                            Evangelismo
-                            </h3>
-                            <p class="articles__paragraph">
-                            We want you to enjoy your travels. This is why we don’t charge
-                            any fees on purchases while you’re abroad. We’ll even show you
-                            …
+                    <article class="new-articles__item">
+                        <div class="new-articles__img"></div>
+                        <div class="new-articles__text">
+                            <h3 class="new-articles__title">Teens</h3>
+                            <p class="new-articles__paragraph">
+                                After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ...
                             </p>
                         </div>
                     </article>
-
-                    <article class="articles__article">
-                        <div class="articles__img"></div>
-                        <div class="articles__text">
-                            <h3 class="articles__title">
-                            Intercesion
-                            </h3>
-                            <p class="articles__paragraph">
-                            We want you to enjoy your travels. This is why we don’t charge
-                            any fees on purchases while you’re abroad. We’ll even show you
-                            …
+                    <article class="new-articles__item">
+                        <div class="new-articles__img"></div>
+                        <div class="new-articles__text">
+                            <h3 class="new-articles__title">Teens</h3>
+                            <p class="new-articles__paragraph">
+                                After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ...
+                            </p>
+                        </div>
+                    </article>
+                    <article class="new-articles__item">
+                        <div class="new-articles__img"></div>
+                        <div class="new-articles__text">
+                            <h3 class="new-articles__title">Teens</h3>
+                            <p class="new-articles__paragraph">
+                                After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ...
+                            </p>
+                        </div>
+                    </article>
+                    <article class="new-articles__item">
+                        <div class="new-articles__img"></div>
+                        <div class="new-articles__text">
+                            <h3 class="new-articles__title">Teens</h3>
+                            <p class="new-articles__paragraph">
+                                After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ...
+                            </p>
+                        </div>
+                    </article>
+                    <article class="new-articles__item">
+                        <div class="new-articles__img"></div>
+                        <div class="new-articles__text">
+                            <h3 class="new-articles__title">Teens</h3>
+                            <p class="new-articles__paragraph">
+                                After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ...
+                            </p>
+                        </div>
+                    </article>
+                    <article class="new-articles__item">
+                        <div class="new-articles__img"></div>
+                        <div class="new-articles__text">
+                            <h3 class="new-articles__title">Teens</h3>
+                            <p class="new-articles__paragraph">
+                                After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ...
+                            </p>
+                        </div>
+                    </article>
+                    <article class="new-articles__item">
+                        <div class="new-articles__img"></div>
+                        <div class="new-articles__text">
+                            <h3 class="new-articles__title">Teens</h3>
+                            <p class="new-articles__paragraph">
+                                After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ...
                             </p>
                         </div>
                     </article>
                 </div>
             </div>
+        </div>
     </section>
 
     <section id="reuniones" class="info__reuniones" style="text-align: center; background-color: #333; color: #fff;">
@@ -355,8 +276,20 @@
             </div>
         </div>
     </section>
+
+    <section class="map-container">
+        <div class="map-wrapper">
+            <iframe class="map-frame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.361499502695!2d-58.42293068818212!3d-34.64557235959789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccba1023744a9%3A0x30b037542eed3550!2sComuna%204%2C%20Av.%20La%20Plata%202656%2C%20C1437%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715908349803!5m2!1ses-419!2sar"
+                width="100%" height="250" allowfullscreen="">
+            </iframe>
+        </div>
+    </section>
+    
     
 
+
+    
     <section id="contacto" class="form-section">
         <div class="form-container">
             <form>
@@ -431,6 +364,9 @@
         </section>
     </footer>
 
+    <script src="/js/carrucel.js"></script>
+    <script src="/js/mapa.js"></script>
+    <script src="/js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
